@@ -1,4 +1,4 @@
-#自定义配置，给定用户和密码
+#鑷畾涔夐厤缃紝缁欏畾鐢ㄦ埛鍜屽瘑鐮�
 sp:
   user-service:
     users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"}]"
@@ -13,5 +13,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 
